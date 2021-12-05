@@ -1,0 +1,1 @@
+awk 'BEGIN { last=99999 } $1 > last { ++n } { last=$1 } END { print n }' < input
